@@ -31,14 +31,13 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var jsx_runtime_1 = require("react/jsx-runtime");
 var styled_components_1 = __importDefault(require("styled-components"));
-var logo_svg_1 = require("./assets/logo.svg");
-var StyledButton = styled_components_1.default.button(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n  text-transform: uppercase;\n"], ["\n  text-transform: uppercase;\n"])));
+var StyledButton = styled_components_1.default.button(templateObject_1 || (templateObject_1 = __makeTemplateObject(["\n      text-transform: uppercase;\n"], ["\n      text-transform: uppercase;\n"])));
 /**
  * Button component
  */
 function Button(_a) {
     var children = _a.children, props = __rest(_a, ["children"]);
-    return ((0, jsx_runtime_1.jsxs)(StyledButton, __assign({ type: "button" }, props, { children: [(0, jsx_runtime_1.jsx)(logo_svg_1.ReactComponent, { width: 23, height: 23 }), children] })));
+    return ((0, jsx_runtime_1.jsx)(StyledButton, __assign({ type: "button" }, props, { className: "bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" }, { children: children })));
 }
 exports.default = Button;
 var templateObject_1;

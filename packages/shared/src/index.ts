@@ -1,2 +1,4 @@
-export * from './Button';
-export { default } from './Button';
+import Button from "./Button";
+import DuoTone from "./icons/duotune";
+
+export { Button, DuoTone };
